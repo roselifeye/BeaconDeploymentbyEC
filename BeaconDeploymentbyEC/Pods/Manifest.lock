@@ -1,0 +1,13 @@
+PODS:
+  - JHChainableAnimations (1.2.0)
+  - MBProgressHUD (0.9.1)
+
+DEPENDENCIES:
+  - JHChainableAnimations (~> 1.2.0)
+  - MBProgressHUD (~> 0.9.1)
+
+SPEC CHECKSUMS:
+  JHChainableAnimations: fb5620f6b36f241d039ee924b0ec4db8edefa27f
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+
+COCOAPODS: 0.37.1

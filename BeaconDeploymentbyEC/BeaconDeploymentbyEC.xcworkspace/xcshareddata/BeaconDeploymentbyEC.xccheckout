@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>45CDEE41-30CF-4CD2-8C56-D8CDF470A9D6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BeaconDeploymentbyEC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5F03D940721E314CB5E43F48D31D4307E1948B69</key>
+		<string>https://github.com/roselifeye/BeaconDeploymentbyEC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BeaconDeploymentbyEC/BeaconDeploymentbyEC.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5F03D940721E314CB5E43F48D31D4307E1948B69</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/roselifeye/BeaconDeploymentbyEC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5F03D940721E314CB5E43F48D31D4307E1948B69</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5F03D940721E314CB5E43F48D31D4307E1948B69</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BeaconDeploymentbyEC</string>
+		</dict>
+	</array>
+</dict>
+</plist>

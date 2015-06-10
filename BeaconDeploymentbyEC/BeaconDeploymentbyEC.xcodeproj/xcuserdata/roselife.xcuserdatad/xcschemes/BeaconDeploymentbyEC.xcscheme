@@ -5,6 +5,36 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5B4F25551B2764B7006E0B4F"
+               BuildableName = "BeaconDeploymentbyEC.app"
+               BlueprintName = "BeaconDeploymentbyEC"
+               ReferencedContainer = "container:BeaconDeploymentbyEC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5B4F256E1B2764B8006E0B4F"
+               BuildableName = "BeaconDeploymentbyECTests.xctest"
+               BlueprintName = "BeaconDeploymentbyECTests"
+               ReferencedContainer = "container:BeaconDeploymentbyEC.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -12,7 +42,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5B4F256E1B2764B8006E0B4F"
+               BuildableName = "BeaconDeploymentbyECTests.xctest"
+               BlueprintName = "BeaconDeploymentbyECTests"
+               ReferencedContainer = "container:BeaconDeploymentbyEC.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5B4F25551B2764B7006E0B4F"
+            BuildableName = "BeaconDeploymentbyEC.app"
+            BlueprintName = "BeaconDeploymentbyEC"
+            ReferencedContainer = "container:BeaconDeploymentbyEC.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -23,6 +72,16 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5B4F25551B2764B7006E0B4F"
+            BuildableName = "BeaconDeploymentbyEC.app"
+            BlueprintName = "BeaconDeploymentbyEC"
+            ReferencedContainer = "container:BeaconDeploymentbyEC.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -32,6 +91,16 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5B4F25551B2764B7006E0B4F"
+            BuildableName = "BeaconDeploymentbyEC.app"
+            BlueprintName = "BeaconDeploymentbyEC"
+            ReferencedContainer = "container:BeaconDeploymentbyEC.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
