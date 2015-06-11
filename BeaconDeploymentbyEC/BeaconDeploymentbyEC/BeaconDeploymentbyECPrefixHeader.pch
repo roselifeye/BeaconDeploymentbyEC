@@ -18,4 +18,7 @@
 
 #import "SPGlobalDefine.h"
 
+#import "SPBeaconStructure.h"
+#import "SPCoordinateStructure.h"
+
 #endif

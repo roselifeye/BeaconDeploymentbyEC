@@ -15,7 +15,7 @@
     /**
      *  Caculate the distance from the beacon to destination.
      */
-    float distance = sqrtf(pow((x-[self.xValue intValue]), 2) + pow((y-[self.yValue intValue]), 2));
+    float distance = sqrtf(pow((x-self.position.x), 2) + pow((y-self.position.y), 2));
     
     /**
      *  The Original RSSI is -5.

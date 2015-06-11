@@ -12,8 +12,7 @@
 
 - (instancetype)initWithXValue:(int)x andYValue:(int)y {
     if(self) {
-        _xValue = [NSNumber numberWithInt:x];
-        _yValue = [NSNumber numberWithInt:y];
+        _position = SPPositionMake(x, y);
         _RSSIArray = [[NSMutableArray alloc] init];
     }
     return self;

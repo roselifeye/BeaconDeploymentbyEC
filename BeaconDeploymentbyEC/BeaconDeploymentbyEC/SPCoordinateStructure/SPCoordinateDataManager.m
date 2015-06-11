@@ -7,7 +7,6 @@
 //
 
 #import "SPCoordinateDataManager.h"
-#import "SPCoordinateStructure.h"
 
 @implementation SPCoordinateDataManager
 

@@ -7,7 +7,6 @@
 //
 
 #import "SPBeaconDataManager.h"
-#import "SPBeaconStructure.h"
 #import "SPPlistManager.h"
 
 @interface SPBeaconDataManager () {
@@ -28,19 +27,23 @@
          */
         _beaconPositionArray = [[NSMutableArray alloc] initWithCapacity:BeaconPreCount];
         _beaconArray = [[NSMutableArray alloc] initWithCapacity:BeaconCount];
-        _hasNewBeacon = NO;
-        start = 0;
-        end = BeaconPreCount;
-        index = 0;
+        [self setDefault];
         [self initBeaconData];
     }
     return self;
 }
 
+- (void)setDefault {
+    _hasNewBeacon = NO;
+    start = 0;
+    end = BeaconPreCount;
+    index = 0;
+}
+
 - (void)initBeaconData {
     NSMutableArray *beaconData = [SPPlistManager GetBeaconData];
     for (NSDictionary *beacon in beaconData) {
-        SPBeaconStructure *newBeacon = [[SPBeaconStructure alloc] initWithXValue:[beacon objectForKey:@"x"] andYValue:[beacon objectForKey:@"y"]];
+        SPBeaconStructure *newBeacon = [[SPBeaconStructure alloc] initWithPosition:SPPositionMake([[beacon objectForKey:@"x"] intValue], [[beacon objectForKey:@"y"] intValue])];
         [_beaconPositionArray addObject:newBeacon];
     }
 }
@@ -56,7 +59,7 @@
      *  The function end.
      */
     if(start + (BeaconCount-index) > end ) {
-        _hasNewBeacon = NO;
+        [self setDefault];
         return;
     }
     [_beaconArray addObject:[_beaconPositionArray objectAtIndex:start]];

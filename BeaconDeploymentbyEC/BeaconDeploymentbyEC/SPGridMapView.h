@@ -10,4 +10,10 @@
 
 @interface SPGridMapView : UIView
 
+@property (nonatomic, retain) NSMutableArray *pointsArray;
+
+- (void)drawOriginalStationPoint;
+
+- (void)movePointFromIndex:(int)index ToDestinationPosition:(SPPosition)destinationPosition;
+
 @end

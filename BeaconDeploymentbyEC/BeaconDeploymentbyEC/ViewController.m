@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "SPGridMapView.h"
 
-#import "SPBeaconStructure.h"
 #import "SPBeaconStructure+Additions.h"
 
 #import "SPBeaconDataManager.h"
@@ -28,6 +27,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIImage *bgImage = [UIImage imageNamed:@"BackgroundImage"];
+    self.view.layer.contents = (id) bgImage.CGImage;
     // Do any additional setup after loading the view, typically from a nib.
     [self initBeacon];
     [self initCoordinateDataWithCount:CoordinateCount];
@@ -64,6 +66,20 @@
     CGRect frame = CGRectMake((CGRectGetWidth(self.view.frame) - MapRows * MapUnit)/2.f, (CGRectGetHeight(self.view.frame) - MapColumns * MapUnit)/2.f, MapRows * MapUnit, MapColumns * MapUnit);
     mapView = [[SPGridMapView alloc] initWithFrame:frame];
     [self.view addSubview:mapView];
+}
+
+- (IBAction)startProgram:(UIButton *)startBtn {
+    [self resetData:nil];
+    for (int i = 0; i < BeaconCount; i++) {
+        SPBeaconStructure *beacon = [beaconData.beaconArray objectAtIndex:i];
+        [mapView movePointFromIndex:i ToDestinationPosition:beacon.position];
+    }
+}
+
+- (IBAction)resetData:(UIButton *)resetBtn {
+    [self initBeacon];
+    [self initCoordinateDataWithCount:CoordinateCount];
+    [mapView drawOriginalStationPoint];
 }
 
 - (void)didReceiveMemoryWarning {

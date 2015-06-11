@@ -10,10 +10,9 @@
 
 @implementation SPBeaconStructure
 
-- (instancetype)initWithXValue:(NSNumber *)x andYValue:(NSNumber *)y {
+- (instancetype)initWithPosition:(SPPosition)beaconPosition {
     if(self) {
-        _xValue = x;
-        _yValue = y;
+        _position = beaconPosition;
     }
     return self;
 }

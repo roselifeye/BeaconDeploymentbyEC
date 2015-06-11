@@ -10,8 +10,7 @@
 
 @interface SPCoordinateStructure : NSObject
 
-@property (nonatomic, retain) NSNumber *xValue;
-@property (nonatomic, retain) NSNumber *yValue;
+@property (nonatomic, assign) SPPosition position;
 /**
  *  Store the RSSI Values for every coordinate.
  *  RSSI Array Have 10 designed Beacon RSSI Values.

@@ -7,6 +7,13 @@
 //
 
 #import "SPGridMapView.h"
+#import <JHChainableAnimations.h>
+
+@interface SPGridMapView () {
+    
+}
+
+@end
 
 @implementation SPGridMapView
 
@@ -14,6 +21,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self drawGrid];
+        [self drawOriginalStationPoint];
     }
     return self;
 }
@@ -56,6 +64,31 @@
         CGContextMoveToPoint(UIGraphicsGetCurrentContext(), 0, i * MapUnit);
         CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), MapRows * MapUnit, i * MapUnit);
     }
+}
+
+/**
+ *  Init the Bluetooth Station as a point
+ */
+- (void)drawOriginalStationPoint {
+    for (UIImageView *subviews in [self subviews]) {
+        if (1000 == subviews.tag) {
+            [subviews removeFromSuperview];
+        }
+    }
+    _pointsArray = [[NSMutableArray alloc] initWithCapacity:BeaconCount];
+    for (int i = 0; i < BeaconCount; i++) {
+        UIImageView *pointView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+        pointView.tag = 1000;
+        [pointView setCenter:CGPointMake(0, 0)];
+        [pointView setBackgroundColor:[UIColor redColor]];
+        [_pointsArray addObject:pointView];
+        [self addSubview:pointView];
+    }
+}
+
+- (void)movePointFromIndex:(int)index ToDestinationPosition:(SPPosition)destinationPosition {
+    UIImageView *fromPoint = [_pointsArray objectAtIndex:index];
+    fromPoint.moveXY(destinationPosition.x, destinationPosition.y).rotate(360*index).animate(1.0);
 }
 
 /*
