@@ -22,6 +22,7 @@
 		5B96506B1B28BBAA00C33A21 /* SPPlistManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96506A1B28BBAA00C33A21 /* SPPlistManager.m */; };
 		5B96506F1B28CBE100C33A21 /* SPBeaconStructure+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96506E1B28CBE100C33A21 /* SPBeaconStructure+Additions.m */; };
 		5B9650761B290B3100C33A21 /* SPECAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9650751B290B3100C33A21 /* SPECAlgorithm.m */; };
+		5BE734EE1B29F095005A8E8A /* SPGridMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE734ED1B29F095005A8E8A /* SPGridMapView.m */; };
 		7FB64F386C5BEFB1A1D6EAB8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39646A83E0B2C6FAE0C247FE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		5B9650721B28E9AA00C33A21 /* BeaconDeploymentbyECPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeaconDeploymentbyECPrefixHeader.pch; sourceTree = "<group>"; };
 		5B9650741B290B3100C33A21 /* SPECAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPECAlgorithm.h; path = SPECAlgorithm/SPECAlgorithm.h; sourceTree = "<group>"; };
 		5B9650751B290B3100C33A21 /* SPECAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPECAlgorithm.m; path = SPECAlgorithm/SPECAlgorithm.m; sourceTree = "<group>"; };
+		5BE734EC1B29F095005A8E8A /* SPGridMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGridMapView.h; sourceTree = "<group>"; };
+		5BE734ED1B29F095005A8E8A /* SPGridMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGridMapView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				5B4F255E1B2764B7006E0B4F /* AppDelegate.m */,
 				5B4F25601B2764B7006E0B4F /* ViewController.h */,
 				5B4F25611B2764B7006E0B4F /* ViewController.m */,
+				5BE734EC1B29F095005A8E8A /* SPGridMapView.h */,
+				5BE734ED1B29F095005A8E8A /* SPGridMapView.m */,
 				5B4F25631B2764B7006E0B4F /* Main.storyboard */,
 				5B4F25661B2764B7006E0B4F /* Images.xcassets */,
 				5B4F25681B2764B7006E0B4F /* LaunchScreen.xib */,
@@ -368,6 +373,7 @@
 				5B9650651B28B8FD00C33A21 /* SPBeaconDataManager.m in Sources */,
 				5B9650621B28B4CE00C33A21 /* SPCoordinateStructure.m in Sources */,
 				5B9650761B290B3100C33A21 /* SPECAlgorithm.m in Sources */,
+				5BE734EE1B29F095005A8E8A /* SPGridMapView.m in Sources */,
 				5B4F25621B2764B7006E0B4F /* ViewController.m in Sources */,
 				5B4F255F1B2764B7006E0B4F /* AppDelegate.m in Sources */,
 				5B4F255C1B2764B7006E0B4F /* main.m in Sources */,

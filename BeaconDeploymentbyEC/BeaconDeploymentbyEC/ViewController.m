@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SPGridMapView.h"
 
 #import "SPBeaconStructure.h"
 #import "SPBeaconStructure+Additions.h"
@@ -17,6 +18,8 @@
 @interface ViewController () {
     SPBeaconDataManager *beaconData;
     SPCoordinateDataManager *coordinateData;
+    
+    SPGridMapView *mapView;
 }
 
 @end
@@ -28,6 +31,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self initBeacon];
     [self initCoordinateDataWithCount:CoordinateCount];
+    [self initGridMapView];
 }
 
 - (void)initBeacon {
@@ -54,6 +58,12 @@
         [RSSIValues addObject:[NSNumber numberWithInt:RSSIFadingValue]];
     }
     return RSSIValues;
+}
+
+- (void)initGridMapView {
+    CGRect frame = CGRectMake((CGRectGetWidth(self.view.frame) - MapRows * MapUnit)/2.f, (CGRectGetHeight(self.view.frame) - MapColumns * MapUnit)/2.f, MapRows * MapUnit, MapColumns * MapUnit);
+    mapView = [[SPGridMapView alloc] initWithFrame:frame];
+    [self.view addSubview:mapView];
 }
 
 - (void)didReceiveMemoryWarning {
