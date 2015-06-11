@@ -16,7 +16,7 @@
         /**
          *  The Capacity in the System is 200;
          */
-        _coordinateArray = [[NSMutableArray alloc] initWithCapacity:200];
+        _coordinateArray = [[NSMutableArray alloc] initWithCapacity:CoordinateCount];
     }
     return self;
 }

@@ -10,8 +10,21 @@
 
 @interface SPBeaconDataManager : NSObject
 
-@property (nonatomic, strong) NSMutableArray *beaconArray;
+/**
+ *  The Designed Positions for Beacons.
+ */
+@property (nonatomic, strong) NSMutableArray *beaconPositionArray;
 
-- (void)createNewBeaconWithXValue:(NSNumber *)x andYValue:(NSNumber *)y;
+/**
+ *  Real used beacons from Designed Positions.
+ */
+@property (nonatomic, retain) NSMutableArray *beaconArray;
+
+@property (nonatomic, assign) BOOL hasNewBeacon;
+
+/**
+ *  Get the New Beacon Array from Designed Positions.
+ */
+- (void)getNewBeaconArray;
 
 @end

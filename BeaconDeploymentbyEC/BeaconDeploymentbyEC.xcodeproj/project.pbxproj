@@ -21,6 +21,7 @@
 		5B9650671B28BAB900C33A21 /* SPBeaconLocationList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B9650661B28BAB900C33A21 /* SPBeaconLocationList.plist */; };
 		5B96506B1B28BBAA00C33A21 /* SPPlistManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96506A1B28BBAA00C33A21 /* SPPlistManager.m */; };
 		5B96506F1B28CBE100C33A21 /* SPBeaconStructure+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B96506E1B28CBE100C33A21 /* SPBeaconStructure+Additions.m */; };
+		5B9650761B290B3100C33A21 /* SPECAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9650751B290B3100C33A21 /* SPECAlgorithm.m */; };
 		7FB64F386C5BEFB1A1D6EAB8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39646A83E0B2C6FAE0C247FE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,10 @@
 		5B96506A1B28BBAA00C33A21 /* SPPlistManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPPlistManager.m; path = SPDataManage/SPPlistManager.m; sourceTree = "<group>"; };
 		5B96506D1B28CBE100C33A21 /* SPBeaconStructure+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SPBeaconStructure+Additions.h"; path = "SPBeaconStructure/SPBeaconStructure+Additions.h"; sourceTree = "<group>"; };
 		5B96506E1B28CBE100C33A21 /* SPBeaconStructure+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SPBeaconStructure+Additions.m"; path = "SPBeaconStructure/SPBeaconStructure+Additions.m"; sourceTree = "<group>"; };
+		5B9650711B28E94F00C33A21 /* SPGlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPGlobalDefine.h; path = SPGlobal/SPGlobalDefine.h; sourceTree = "<group>"; };
+		5B9650721B28E9AA00C33A21 /* BeaconDeploymentbyECPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeaconDeploymentbyECPrefixHeader.pch; sourceTree = "<group>"; };
+		5B9650741B290B3100C33A21 /* SPECAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPECAlgorithm.h; path = SPECAlgorithm/SPECAlgorithm.h; sourceTree = "<group>"; };
+		5B9650751B290B3100C33A21 /* SPECAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPECAlgorithm.m; path = SPECAlgorithm/SPECAlgorithm.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,8 @@
 		5B4F25581B2764B7006E0B4F /* BeaconDeploymentbyEC */ = {
 			isa = PBXGroup;
 			children = (
+				5B9650731B290B0500C33A21 /* SPECAlgorithm */,
+				5B9650701B28E8FB00C33A21 /* SPGlobal */,
 				5B9650681B28BB8600C33A21 /* SPDataManage */,
 				5B9650561B28B2DB00C33A21 /* SPBeaconStructure */,
 				5B9650521B28937900C33A21 /* SPCoordinateStructure */,
@@ -128,6 +135,7 @@
 			children = (
 				5B4F255A1B2764B7006E0B4F /* Info.plist */,
 				5B4F255B1B2764B7006E0B4F /* main.m */,
+				5B9650721B28E9AA00C33A21 /* BeaconDeploymentbyECPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,6 +189,23 @@
 				5B96506A1B28BBAA00C33A21 /* SPPlistManager.m */,
 			);
 			name = SPDataManage;
+			sourceTree = "<group>";
+		};
+		5B9650701B28E8FB00C33A21 /* SPGlobal */ = {
+			isa = PBXGroup;
+			children = (
+				5B9650711B28E94F00C33A21 /* SPGlobalDefine.h */,
+			);
+			name = SPGlobal;
+			sourceTree = "<group>";
+		};
+		5B9650731B290B0500C33A21 /* SPECAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				5B9650741B290B3100C33A21 /* SPECAlgorithm.h */,
+				5B9650751B290B3100C33A21 /* SPECAlgorithm.m */,
+			);
+			name = SPECAlgorithm;
 			sourceTree = "<group>";
 		};
 		C2615A19FB0240471851F9B8 /* Pods */ = {
@@ -342,6 +367,7 @@
 				5B96506F1B28CBE100C33A21 /* SPBeaconStructure+Additions.m in Sources */,
 				5B9650651B28B8FD00C33A21 /* SPBeaconDataManager.m in Sources */,
 				5B9650621B28B4CE00C33A21 /* SPCoordinateStructure.m in Sources */,
+				5B9650761B290B3100C33A21 /* SPECAlgorithm.m in Sources */,
 				5B4F25621B2764B7006E0B4F /* ViewController.m in Sources */,
 				5B4F255F1B2764B7006E0B4F /* AppDelegate.m in Sources */,
 				5B4F255C1B2764B7006E0B4F /* main.m in Sources */,
@@ -473,6 +499,7 @@
 			baseConfigurationReference = 31FD6AA25B5FC6775EC6823B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/BeaconDeploymentbyEC/BeaconDeploymentbyECPrefixHeader.pch";
 				INFOPLIST_FILE = BeaconDeploymentbyEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +511,7 @@
 			baseConfigurationReference = 00B479F86B6BE03DB7B1FC37 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/BeaconDeploymentbyEC/BeaconDeploymentbyECPrefixHeader.pch";
 				INFOPLIST_FILE = BeaconDeploymentbyEC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
