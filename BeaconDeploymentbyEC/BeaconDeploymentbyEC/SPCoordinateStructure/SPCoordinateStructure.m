@@ -13,7 +13,8 @@
 - (instancetype)initWithXValue:(int)x andYValue:(int)y {
     if(self) {
         _position = SPPositionMake(x, y);
-        _RSSIArray = [[NSMutableArray alloc] init];
+        //_RSSIArray = [[NSMutableArray alloc] init];
+        _RSSIDic = [[NSMutableDictionary alloc] init];
     }
     return self;
 }

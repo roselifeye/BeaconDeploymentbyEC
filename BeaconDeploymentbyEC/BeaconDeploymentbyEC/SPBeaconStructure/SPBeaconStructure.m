@@ -13,6 +13,7 @@
 - (instancetype)initWithPosition:(SPPosition)beaconPosition {
     if(self) {
         _position = beaconPosition;
+        _coordinateInRangeArray = [[NSMutableArray alloc] init];
     }
     return self;
 }

@@ -10,4 +10,13 @@
 
 @interface SPECAlgorithm : NSObject
 
+/**
+ *  Divide CoordinateArray into MapColumns arrays
+ *
+ *  @param arrays CoordinateAray
+ */
+- (void)divideRSSIArraysIntoGroups:(NSMutableArray *)arrays;
+
+- (void)divideBeaconsArrayIntoGroups;
+
 @end

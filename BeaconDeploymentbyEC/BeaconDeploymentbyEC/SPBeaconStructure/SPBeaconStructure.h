@@ -23,8 +23,10 @@ SPPositionMake(int x, int y)
     return position;
 }
 
-@interface SPBeaconStructure : NSObject
+@interface SPBeaconStructure : NSObject {
+}
 
+@property (nonatomic, strong) NSMutableArray *coordinateInRangeArray;
 
 @property (nonatomic, assign) SPPosition position;
 

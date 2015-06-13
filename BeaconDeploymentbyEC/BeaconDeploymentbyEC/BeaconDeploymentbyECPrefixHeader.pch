@@ -17,8 +17,11 @@
 #ifdef __OBJC__
 
 #import "SPGlobalDefine.h"
+#import "SPGlobalData.h"
 
 #import "SPBeaconStructure.h"
 #import "SPCoordinateStructure.h"
+
+#import "SPBeaconStructure+Additions.h"
 
 #endif

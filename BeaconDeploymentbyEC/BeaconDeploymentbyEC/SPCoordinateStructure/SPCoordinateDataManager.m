@@ -20,9 +20,9 @@
     return self;
 }
 
-- (void)createNewCoordinateWithXValue:(int)x andYValue:(int)y andRSSIArray:(NSMutableArray *)RSSIArray {
+- (void)createNewCoordinateWithXValue:(int)x andYValue:(int)y andRSSIDictionary:(NSMutableDictionary *)RSSIDic {
     SPCoordinateStructure *newCoordinate = [[SPCoordinateStructure alloc] initWithXValue:x andYValue:y];
-    newCoordinate.RSSIArray = RSSIArray;
+    newCoordinate.RSSIDic = RSSIDic;
     [_coordinateArray addObject:newCoordinate];
 }
 
@@ -31,9 +31,9 @@
     [_coordinateArray replaceObjectAtIndex:index withObject:updateCoordinate];
 }
 
-- (void)setRSSIValueWithRSSIArray:(NSMutableArray *)RSSIAray atIndex:(int)index {
+- (void)setRSSIValueWithRSSIDictionary:(NSMutableDictionary *)RSSIDic atIndex:(int)index {
     SPCoordinateStructure *updateCoordinate = [_coordinateArray objectAtIndex:index];
-    updateCoordinate.RSSIArray = RSSIAray;
+    updateCoordinate.RSSIDic = RSSIDic;
     [_coordinateArray replaceObjectAtIndex:index withObject:updateCoordinate];
 }
 

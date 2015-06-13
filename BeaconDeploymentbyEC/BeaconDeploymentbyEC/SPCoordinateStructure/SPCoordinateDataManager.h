@@ -17,11 +17,12 @@
 @property (nonatomic, strong) NSMutableArray *coordinateArray;
 
 
-- (void)createNewCoordinateWithXValue:(int)x andYValue:(int)y andRSSIArray:(NSMutableArray *)RSSIArray;
+//- (void)createNewCoordinateWithXValue:(int)x andYValue:(int)y andRSSIArray:(NSMutableArray *)RSSIArray;
+- (void)createNewCoordinateWithXValue:(int)x andYValue:(int)y andRSSIDictionary:(NSMutableDictionary *)RSSIDic;
 
 - (void)setCoordinateValueWithXValue:(int)x andYValue:(int)y atIndex:(int)index;
 
-- (void)setRSSIValueWithRSSIArray:(NSMutableArray *)RSSIAray atIndex:(int)index;
+- (void)setRSSIValueWithRSSIDictionary:(NSMutableDictionary *)RSSIDic atIndex:(int)index;
 
 - (void)deleteCoordinateValueWithIndex:(int)index;
 

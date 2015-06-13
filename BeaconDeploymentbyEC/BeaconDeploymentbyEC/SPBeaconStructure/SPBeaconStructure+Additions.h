@@ -10,6 +10,6 @@
 
 @interface SPBeaconStructure (Additions)
 
-- (int)RSSIFadingWithCoordinateXValue:(int)x andYValue:(int)y;
+- (int)RSSIFadingWithCoordinateXValue:(int)x andYValue:(int)y andCoordinateIndex:(int)index;
 
 @end
